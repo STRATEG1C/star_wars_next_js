@@ -11,6 +11,8 @@ const PageWrapper: React.FC<Props> = ({ title, children }) => {
             <Head>
                 <title>{ title }</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="Test site on Nest js" />
+                <meta name="keywords" content="Next, React, JavaScript" />
             </Head>
             { children }
         </div>

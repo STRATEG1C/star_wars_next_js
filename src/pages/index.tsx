@@ -51,24 +51,26 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ postLi
         }}>
             <PageWrapper title="Star Wars">
                 <Header />
-                <p className="mt-10 ml-5">
-                    <label htmlFor="posts-quantity">Posts quantity:&nbsp;</label>
-                    <select
-                        name="posts-quantity"
-                        value={quantityOfPosts}
-                        onChange={onChangeQuantityOfPosts}
-                    >
-                        <option value="3">3</option>
-                        <option value="6">6</option>
-                        <option value="9">9</option>
-                    </select>
-                </p>
-                <div className="mt-10">
-                    <PostList
-                        posts={ posts }
-                        onRemovePost={onRemovePost}
-                    />
-                </div>
+                <main>
+                    <p className="mt-10 ml-5">
+                        <label htmlFor="posts-quantity">Posts quantity:&nbsp;</label>
+                        <select
+                            name="posts-quantity"
+                            value={quantityOfPosts}
+                            onChange={onChangeQuantityOfPosts}
+                        >
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="9">9</option>
+                        </select>
+                    </p>
+                    <div className="mt-10">
+                        <PostList
+                            posts={ posts }
+                            onRemovePost={onRemovePost}
+                        />
+                    </div>
+                </main>
             </PageWrapper>
         </AppContext.Provider>
     );
