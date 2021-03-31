@@ -16,6 +16,9 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ postLi
     }, [postList]);
 
     useEffect(() => {
+        if (quantityOfPosts === DEFAULT_NUMBER_OF_POSTS) {
+            return;
+        }
         loadNewPosts();
     }, [quantityOfPosts]);
 
