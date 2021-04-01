@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render PageWrapper and title Should render component with title and children 1`] = `
+<div>
+  <Head>
+    <title>
+      Title
+    </title>
+    <link
+      href="/favicon.ico"
+      rel="icon"
+    />
+    <meta
+      content="Test site on Nest js"
+      name="description"
+    />
+    <meta
+      content="Next, React, JavaScript"
+      name="keywords"
+    />
+  </Head>
+  <p>
+    App
+  </p>
+</div>
+`;

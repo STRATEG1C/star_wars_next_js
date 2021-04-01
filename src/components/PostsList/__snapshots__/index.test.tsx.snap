@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render PostList Should render posts 1`] = `
+<div
+  class="post-list flex flex-wrap"
+>
+  <article
+    class="post my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
+  >
+    <div
+      class="w-full flex justify-between"
+    >
+      <div
+        class="flex"
+      >
+        <div
+          class="rounded-full h-10 w-10 bg-gray-500 flex items-center justify-between overflow-hidden"
+        >
+          <img
+            alt="profilepic"
+            src="string"
+          />
+        </div>
+        <div>
+          <p
+            class="post__author-name ml-2 font-bold text-sm"
+          >
+            Dart Veider
+          </p>
+          <p
+            class="post__author-info ml-2 font-light text-sm"
+          >
+            Human, Star
+          </p>
+        </div>
+      </div>
+      <button>
+        Remove
+      </button>
+    </div>
+    <img
+      class="w-full bg-cover mt-6 rounded"
+      src="https://picsum.photos/600/400"
+    />
+  </article>
+  <article
+    class="post my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
+  >
+    <div
+      class="w-full flex justify-between"
+    >
+      <div
+        class="flex"
+      >
+        <div
+          class="rounded-full h-10 w-10 bg-gray-500 flex items-center justify-between overflow-hidden"
+        >
+          <img
+            alt="profilepic"
+            src="string"
+          />
+        </div>
+        <div>
+          <p
+            class="post__author-name ml-2 font-bold text-sm"
+          >
+            Obivan
+          </p>
+          <p
+            class="post__author-info ml-2 font-light text-sm"
+          >
+            Human, Star
+          </p>
+        </div>
+      </div>
+      <button>
+        Remove
+      </button>
+    </div>
+    <img
+      class="w-full bg-cover mt-6 rounded"
+      src="https://picsum.photos/600/400"
+    />
+  </article>
+</div>
+`;

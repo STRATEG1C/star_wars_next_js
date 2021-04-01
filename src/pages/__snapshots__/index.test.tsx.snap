@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test of main page Should render the page 1`] = `
+<Home
+  postList={Array []}
+/>
+`;
+
+exports[`Test of main page Should render the page with received posts 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <h2
+      class="font-bold text-3xl"
+    >
+      The Fight Continues
+    </h2>
+    <div>
+      <span
+        class="font-bold"
+      >
+        0 Warriors
+      </span>
+      <button
+        class="btn btn-blue ml-8 w-32"
+      >
+        Reset
+      </button>
+    </div>
+  </header>
+  <main>
+    <p
+      class="mt-10 ml-5"
+    >
+      <label
+        for="posts-quantity"
+      >
+        Posts quantity: 
+      </label>
+      <select
+        name="posts-quantity"
+      >
+        <option
+          value="3"
+        >
+          3
+        </option>
+        <option
+          selected=""
+          value="6"
+        >
+          6
+        </option>
+        <option
+          value="9"
+        >
+          9
+        </option>
+      </select>
+    </p>
+    <div
+      class="mt-10"
+    >
+      <div
+        class="post-list flex flex-wrap"
+      />
+    </div>
+  </main>
+</div>
+`;

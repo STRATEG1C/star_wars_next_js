@@ -1,15 +1,18 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { InferGetStaticPropsType } from 'next';
+
 import { AppContext } from '../context';
 import { DEFAULT_NUMBER_OF_POSTS } from '../constants';
+import { IPost } from '../components/PostsList/types';
 import { loadPosts } from '../api/posts';
+
 import PageWrapper from '../components/PageWrapper';
 import Header from '../components/Header';
 import PostList from '../components/PostsList';
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ postList }) => {
-    const [posts, setPosts] = useState([]);
-    const [quantityOfPosts, setQuantityOfPosts] = useState(DEFAULT_NUMBER_OF_POSTS);
+    const [posts, setPosts] = useState<IPost[]>([]);
+    const [quantityOfPosts, setQuantityOfPosts] = useState<number>(DEFAULT_NUMBER_OF_POSTS);
 
     useEffect(() => {
         setPosts(postList)
@@ -34,9 +37,9 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ postLi
         });
     }, [setPosts]);
 
-    const onChangeQuantityOfPosts = useCallback((e: React.SyntheticEvent<HTMLSelectElement>) => {
-       setQuantityOfPosts(e.target.value);
-    }, [setQuantityOfPosts]);
+    const onChangeQuantityOfPosts = (e: React.ChangeEvent<HTMLSelectElement>) => {
+       setQuantityOfPosts(parseInt(e.target.value));
+    }
 
     if (!postList) {
         return (

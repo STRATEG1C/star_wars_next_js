@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check render of Header 1`] = `
+<header
+  className="header"
+>
+  <h2
+    className="font-bold text-3xl"
+  >
+    The Fight Continues
+  </h2>
+  <div>
+    <span
+      className="font-bold"
+    >
+      0
+       Warriors
+    </span>
+    <button
+      className="btn btn-blue ml-8 w-32"
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </div>
+</header>
+`;

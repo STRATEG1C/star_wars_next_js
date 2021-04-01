@@ -13,15 +13,15 @@ const Post: React.FC<Props> = ({ idx, post, onRemove }) => {
     const onRemoveHandler = useCallback((idx) => onRemove(idx), [idx, onRemove]);
 
     return (
-        <article className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        <article className="post my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
             <div className="w-full flex justify-between">
                 <div className="flex">
                     <div className="rounded-full h-10 w-10 bg-gray-500 flex items-center justify-between overflow-hidden">
                         <img src={post.author.avatar} alt="profilepic" />
                     </div>
                     <div>
-                        <p className="ml-2 font-bold text-sm">{post.author.name}</p>
-                        <p className="ml-2 font-light text-sm">
+                        <p className="post__author-name ml-2 font-bold text-sm">{post.author.name}</p>
+                        <p className="post__author-info ml-2 font-light text-sm">
                             {post.author.specie},&nbsp;
                             {post.author.home}
                         </p>
